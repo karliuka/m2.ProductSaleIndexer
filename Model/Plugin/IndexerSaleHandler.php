@@ -55,7 +55,7 @@ class IndexerSaleHandler
      */     
     public function beforeExecuteList($subject, array $ids)
     {
-
+		$this->_indexer->executeList($ids);
         return $ids;
     }
 }  
