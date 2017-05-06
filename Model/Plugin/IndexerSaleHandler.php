@@ -49,11 +49,11 @@ class IndexerSaleHandler
     /**
      * Execute partial indexation by ID list
      *
-     * @param \Magento\Catalog\Model\Indexer\Product\Price $rule
+     * @param \Magento\Catalog\Model\Indexer\Product\Price $price
      * @param int[] $ids
      * @return int[] $ids
      */     
-    public function beforeExecuteList($subject, array $ids)
+    public function beforeExecuteList($price, array $ids)
     {
 		$this->_indexer->executeList($ids);
         return $ids;
