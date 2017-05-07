@@ -1,6 +1,6 @@
 {
     "name": "faonni/module-product-sale",
-    "description": "Special price indexer.",
+    "description": "Special price product indexer.",
     "type": "magento2-module",
 	"version": "2.0.1",
 	"license": [
