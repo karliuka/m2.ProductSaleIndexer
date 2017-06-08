@@ -21,12 +21,10 @@
  */
 namespace Faonni\ProductSaleIndexer\Model\Plugin;
 
-use Magento\Catalog\Model\ResourceModel\Product\Collection as ProductCollection;
-
 /**
  * ProductCollection plugin
  */
-class ProductCollectionLoad
+class ProductCollection
 {
     /**
      * Load collection data into object items

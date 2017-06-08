@@ -27,6 +27,6 @@
 	plugin from Magento\Catalog\Model\ResourceModel\Product\Collection
 	-->		
     <type name="Magento\Catalog\Model\ResourceModel\Product\Collection">
-        <plugin name="faonni-product-sale-indexer" type="Faonni\ProductSaleIndexer\Model\Plugin\ProductCollectionLoad"/>
+        <plugin name="faonni-product-sale-indexer" type="Faonni\ProductSaleIndexer\Model\Plugin\ProductCollection"/>
     </type>	
 </config>
