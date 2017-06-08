@@ -15,23 +15,23 @@
  * Do not edit or add to this file if you wish to upgrade module to newer
  * versions in the future.
  * 
- * @package     Faonni_ProductSale
+ * @package     Faonni_ProductSaleIndexer
  * @copyright   Copyright (c) 2017 Karliuka Vitalii(karliuka.vitalii@gmail.com) 
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-namespace Faonni\ProductSale\Model\Plugin;
+namespace Faonni\ProductSaleIndexer\Model\Plugin;
 
-use Faonni\ProductSale\Model\Indexer\Product\SaleIndexer;
+use Faonni\ProductSaleIndexer\Model\Indexer\Product\SaleIndexer;
 
 /**
- * ProductSale plugin
+ * ProductSaleIndexer plugin
  */
 class IndexerSaleHandler
 {
     /**
      * Sale Indexer instance
      *
-     * @var \Faonni\ProductSale\Model\Indexer\Product\SaleIndexer
+     * @var \Faonni\ProductSaleIndexer\Model\Indexer\Product\SaleIndexer
      */
     protected $_indexer;         
     

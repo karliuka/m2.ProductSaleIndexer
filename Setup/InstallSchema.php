@@ -15,11 +15,11 @@
  * Do not edit or add to this file if you wish to upgrade module to newer
  * versions in the future.
  * 
- * @package     Faonni_ProductSale
+ * @package     Faonni_ProductSaleIndexer
  * @copyright   Copyright (c) 2017 Karliuka Vitalii(karliuka.vitalii@gmail.com) 
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-namespace Faonni\ProductSale\Setup;
+namespace Faonni\ProductSaleIndexer\Setup;
 
 use Magento\Framework\Setup\InstallSchemaInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
@@ -27,12 +27,12 @@ use Magento\Framework\Setup\SchemaSetupInterface;
 use Magento\Framework\DB\Ddl\Table;
 
 /**
- * Faonni_ProductSale InstallSchema
+ * Faonni_ProductSaleIndexer InstallSchema
  */
 class InstallSchema implements InstallSchemaInterface
 {
     /**
-     * Installs DB schema for a module Faonni_ProductSale
+     * Installs DB schema for a module Faonni_ProductSaleIndexer
      *
      * @param SchemaSetupInterface $setup
      * @param ModuleContextInterface $context

@@ -1,4 +1,4 @@
-# Magento2 Product Sale
+# Magento2 Product Sale Indexer
 Special price product indexer
 
 ## Install with Composer as you go
@@ -8,7 +8,7 @@ Special price product indexer
 2. Enter following commands to install module:
 
     ```bash
-    composer require faonni/module-product-sale
+    composer require faonni/module-product-sale-indexer
     ```
    Wait while dependencies are updated.
 

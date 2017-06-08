@@ -1,5 +1,5 @@
 {
-    "name": "faonni/module-product-sale",
+    "name": "faonni/module-product-sale-indexer",
     "description": "Special price product indexer.",
     "type": "magento2-module",
 	"version": "2.0.1",
@@ -12,7 +12,7 @@
 	"autoload": {
 	"files": [ "registration.php" ],
 	"psr-4": {
-		"Faonni\\ProductSale\\": ""
+		"Faonni\\ProductSaleIndexer\\": ""
 		}
 	}
 }

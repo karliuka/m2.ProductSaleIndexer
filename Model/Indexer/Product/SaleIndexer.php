@@ -15,25 +15,25 @@
  * Do not edit or add to this file if you wish to upgrade module to newer
  * versions in the future.
  * 
- * @package     Faonni_ProductSale
+ * @package     Faonni_ProductSaleIndexer
  * @copyright   Copyright (c) 2017 Karliuka Vitalii(karliuka.vitalii@gmail.com) 
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-namespace Faonni\ProductSale\Model\Indexer\Product;
+namespace Faonni\ProductSaleIndexer\Model\Indexer\Product;
 
 use Magento\Framework\Indexer\ActionInterface;
 use Magento\Framework\Mview\ActionInterface as MviewActionInterface;
-use Faonni\ProductSale\Model\ResourceModel\Indexer\Product\SaleIndexer as IndexerResource;
+use Faonni\ProductSaleIndexer\Model\ResourceModel\Indexer\Product\SaleIndexer as IndexerResource;
 
 /**
- * ProductSale Index model
+ * ProductSaleIndexer Index model
  */
 class SaleIndexer implements ActionInterface, MviewActionInterface
 {
     /**
      * Indexer resource model
      *
-     * @var \Faonni\ProductSale\Model\ResourceModel\Indexer\Product\SaleIndexer
+     * @var \Faonni\ProductSaleIndexer\Model\ResourceModel\Indexer\Product\SaleIndexer
      */
     protected $_indexerResource;
 	

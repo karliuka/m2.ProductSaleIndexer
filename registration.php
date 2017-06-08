@@ -15,12 +15,12 @@
  * Do not edit or add to this file if you wish to upgrade module to newer
  * versions in the future.
  * 
- * @package     Faonni_ProductSale
+ * @package     Faonni_ProductSaleIndexer
  * @copyright   Copyright (c) 2017 Karliuka Vitalii(karliuka.vitalii@gmail.com) 
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'Faonni_ProductSale',
+    'Faonni_ProductSaleIndexer',
     __DIR__
 );

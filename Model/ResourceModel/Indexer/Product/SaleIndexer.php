@@ -15,18 +15,18 @@
  * Do not edit or add to this file if you wish to upgrade module to newer
  * versions in the future.
  * 
- * @package     Faonni_ProductSale
+ * @package     Faonni_ProductSaleIndexer
  * @copyright   Copyright (c) 2017 Karliuka Vitalii(karliuka.vitalii@gmail.com) 
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-namespace Faonni\ProductSale\Model\ResourceModel\Indexer\Product;
+namespace Faonni\ProductSaleIndexer\Model\ResourceModel\Indexer\Product;
 
 use Magento\Catalog\Model\ResourceModel\Product\Indexer\AbstractIndexer;
 use Magento\Catalog\Model\Product\Attribute\Source\Status;
 use Magento\Catalog\Api\Data\ProductInterface;
 
 /**
- * ProductSale index resource model
+ * ProductSaleIndexer index resource model
  */
 class SaleIndexer extends AbstractIndexer
 {

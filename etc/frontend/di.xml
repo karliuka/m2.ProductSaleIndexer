@@ -21,14 +21,12 @@
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 -->
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/Module/etc/module.xsd">
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
 	<!--
-	module Faonni_ProductSaleIndexer
+	plugin from Magento\Catalog\Model\ResourceModel\Product\Collection
 	-->		
-    <module name="Faonni_ProductSaleIndexer" setup_version="2.0.1">
-        <sequence>
-            <module name="Magento_Catalog"/>
-        </sequence>
-    </module>		
+    <type name="Magento\Catalog\Model\ResourceModel\Product\Collection">
+        <plugin name="faonni-product-sale-indexer" type="Faonni\ProductSaleIndexer\Model\Plugin\ProductCollectionLoad"/>
+    </type>	
 </config>

@@ -15,17 +15,17 @@
  * Do not edit or add to this file if you wish to upgrade module to newer
  * versions in the future.
  * 
- * @package     Faonni_ProductSale
+ * @package     Faonni_ProductSaleIndexer
  * @copyright   Copyright (c) 2017 Karliuka Vitalii(karliuka.vitalii@gmail.com) 
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-namespace Faonni\ProductSale\Helper;
+namespace Faonni\ProductSaleIndexer\Helper;
 
 use Magento\Store\Model\ScopeInterface;
 use Magento\Framework\App\Helper\AbstractHelper;
 
 /**
- * Faonni ProductSale Data helper
+ * Faonni ProductSaleIndexer Data helper
  */
 class Data extends AbstractHelper
 {     
