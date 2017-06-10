@@ -21,11 +21,31 @@
  */
 namespace Faonni\ProductSaleIndexer\Model\Plugin;
 
+use Magento\Store\Model\StoreManagerInterface;
+
 /**
  * ProductCollection plugin
  */
 class ProductCollection
 {
+    /**
+     * Store Manager instance
+     *
+     * @var \Magento\Store\Model\StoreManagerInterface
+     */	
+	protected $_storeManager;
+	
+    /**
+	 * Initialize plugin
+	 *	
+     * @param StoreManagerInterface $storeManager
+     */
+    public function __construct(
+        StoreManagerInterface $storeManager
+    ) {
+        $this->_storeManager = $storeManager;
+    }	
+		
     /**
      * Load collection data into object items
      *
@@ -42,7 +62,13 @@ class ProductCollection
 			
 			$select->joinLeft(
 				['sale_flag' => $collection->getTable('faonni_catalog_product_index_sale')],
-				'e.entity_id = sale_flag.entity_id AND price_index.website_id = sale_flag.website_id',
+				join(
+					' AND ',
+					[
+						'e.entity_id = sale_flag.entity_id',
+						$connection->quoteInto('sale_flag.website_id = ?', $this->_storeManager->getStore()->getWebsiteId())
+					]
+				),
 				['is_sale' => $connection->getCheckSql('sale_flag.entity_id IS NULL', '0', '1')]
 			);
 		}
