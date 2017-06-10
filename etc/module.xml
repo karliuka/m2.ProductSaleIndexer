@@ -26,7 +26,7 @@
 	<!--
 	module Faonni_ProductSaleIndexer
 	-->		
-    <module name="Faonni_ProductSaleIndexer" setup_version="2.0.1">
+    <module name="Faonni_ProductSaleIndexer" setup_version="2.0.3">
         <sequence>
             <module name="Magento_Catalog"/>
         </sequence>
