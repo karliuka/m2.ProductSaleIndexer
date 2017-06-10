@@ -23,7 +23,6 @@ namespace Faonni\ProductSaleIndexer\Model\ResourceModel\Indexer\Product;
 
 use Magento\Catalog\Model\ResourceModel\Product\Indexer\AbstractIndexer;
 use Magento\Catalog\Model\Product\Attribute\Source\Status;
-use Magento\Catalog\Api\Data\ProductInterface;
 
 /**
  * ProductSaleIndexer index resource model
@@ -91,10 +90,7 @@ class SaleIndexer extends AbstractIndexer
 			$this->cleanAll();
 		}
 
-		$connection = $this->getConnection();	
-		$metadata = $this->getMetadataPool()
-			->getMetadata(ProductInterface::class);	
-			      
+		$connection = $this->getConnection();				      
         $select = $connection->select()->from(
             ['e' => $this->getTable('catalog_product_entity')],
             ['entity_id']
@@ -130,7 +126,7 @@ class SaleIndexer extends AbstractIndexer
         $this->_addAttributeToSelect(
             $select,
             'status',
-            'e.' . $metadata->getLinkField(),
+            'e.entity_id',
             'cs.store_id',
             $statusCond,
             true
@@ -139,7 +135,7 @@ class SaleIndexer extends AbstractIndexer
         $specialPrice = $this->_addAttributeToSelect(
             $select,
             'special_price',
-            'e.' . $metadata->getLinkField(),
+            'e.entity_id',
             'cs.store_id',
             null,
             true
@@ -148,14 +144,14 @@ class SaleIndexer extends AbstractIndexer
         $specialFrom = $this->_addAttributeToSelect(
             $select,
             'special_from_date',
-            'e.' . $metadata->getLinkField(),
+            'e.entity_id',
             'cs.store_id'
         );
         
         $specialTo = $this->_addAttributeToSelect(
             $select,
             'special_to_date',
-            'e.' . $metadata->getLinkField(),
+            'e.entity_id',
             'cs.store_id'
         );        
 
