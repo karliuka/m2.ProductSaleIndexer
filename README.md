@@ -1,4 +1,4 @@
-# Magento2 Product Sale Indexer
+# Magento2 Product Sale Indexer (Deprecated)
 Special price product indexer
 
 ## Install with Composer as you go
